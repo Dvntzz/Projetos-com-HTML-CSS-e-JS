@@ -1,0 +1,256 @@
+body{
+    background-color: #f7f5f5;
+    margin: 0px;
+}
+
+
+#pai{
+    width: 1311px;
+    height: 1200px;
+    position: absolute;
+    margin-top: -15px;
+    background-color: #76a84d;
+}
+
+#topo{
+    width: 1280px;
+    height: 300px;
+    position: absolute;
+    padding: 15px;
+    background-color:#000080d7;
+    
+}
+
+#topo h1{
+    color: #ff8c00;
+    font-size:70px;
+    font-family:Verdana;
+    text-align: center;
+}
+
+#topo  p{
+    margin-left: 40%;
+    font-size: 25px;
+    font-family:sans-serif;
+    color:#ff8c00;
+    margin-top: -40px;
+    cursor:inherit;
+}
+#topo a{
+    text-decoration: none;
+}
+
+
+#menu{
+    width: 1311px;
+    height: 200px;
+    position: absolute;
+    top: 200px;
+    text-align: center;
+}
+
+#b1, #b2, #b3, #b4, #b5, #b6, #b7,#b8,#b9{
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+    background-color: #ff8c00;
+    border: solid 3px 2px 2px 3px rgba(0, 0, 0, 3);
+    border-radius: 30px;
+    font-size: 15px;
+    padding: 5px;
+    margin-left: 15px;
+    cursor: pointer;
+    margin-top: 35px;
+}
+
+#b5:hover {
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.466) 0px 1px 1px 4px;
+}
+
+#b4:hover ,#b6:hover {
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.466) 0px 1px 1px 4px;
+}
+
+#b3:hover, #b7:hover{
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.466) 0px 1px 1px 4px;
+}
+
+#b2:hover, #b8:hover{
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.466) 0px 1px 1px 4px;
+}
+
+#b1:hover, #b9:hover{
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.466) 0px 1px 1px 4px;
+}
+
+
+#conteudo{
+    background-color: #FFFFFF;
+    width: 911px;
+    height: 700px;
+    position: absolute;
+    top: 300px;
+}   
+
+#conteudo h1{
+    font-size: 50px;
+    margin-left: 45%;
+    left: 50%;
+    text-decoration: none;
+    color: rgb(12, 22, 170);
+}
+
+#conteudo img{
+    margin-left: 35px;
+    margin-bottom: 40px;
+    max-width: 150px;
+    width: 138px;
+    height: 209.94px;
+    border: 1px black solid;
+    transition: 0.5s;
+}
+
+
+#conteudo img:hover{
+    transform: translateY(10px);
+    transition: 0.5s;
+    box-shadow: #3b3b3b 1px 1px 26px 0px;
+}
+
+
+#lateral{
+    width: 398px;
+    height: 700px;
+    position: absolute;
+    top: 300px;
+    left: 911px;
+    background-color: #ffffff;
+    border: solid #ddd 1px;
+}
+
+#lateral h1{
+    font-size: 35px;
+    margin-left: 35%;
+    left: 50%;
+    text-decoration: none;
+    color: #0c16aa;
+}
+
+#lateral ul li{
+    margin-left: 20px;
+    font-size: 17px;
+    font-family: Verdana;
+    margin-top: 30px;
+    list-style: none;
+    cursor: pointer; 
+}
+
+#lateral a{
+    text-decoration: none;
+    color: black;
+}
+
+#lateral a:hover{
+    transition: 0.5s;
+    text-decoration: underline;
+}
+
+#rodapé{
+    width: 1311px;
+    height: 200px;
+    position: absolute;
+    top: 1000px;
+    left: 0;
+    background-color: #FFA500;
+}
+
+#rodapé h1{
+    font-size: 30px;
+    font-family: Verdana;
+    color: #101111;
+    margin-left: 45%;
+    margin-top: -2px;
+    left: 50%;
+}
+
+#rodapé  .divrp{
+    width: 10px;
+    height: 10px;
+    left: 300px;
+    position: absolute;
+    margin-top: -30px;
+    color: #1011;
+}
+#rodapé  .divrp2{
+    width: 10px;
+    height: 10px;
+    left: 500px;
+    position: absolute;
+    margin-top: -30px;
+
+}
+
+#rodapé  .divrp3{
+    width: 10px;
+    height: 10px;
+    left: 780px;
+    position: absolute;
+    margin-top: -30px;
+}
+
+#rodapé  .divrp4{ 
+    width: 10px;
+    height: 2px;
+    left: 1000px;
+    position: absolute;
+    margin-top: -30px;
+}
+
+#rodapé .fn{
+    font-size: 20px;
+    font-family: Verdana;
+    color: #101111;
+    margin-bottom: -15px;
+    
+}
+ #rodapé a{
+     font-size: 20px;
+     color:#101111 ;
+     text-decoration:none;
+     list-style: none;
+ }
+
+ #rodapé a:hover{
+     transition: 0.5s;
+    color:#ffffff;
+    text-decoration: underline;
+ }
+
+ #rodapé ul li{
+     margin-top: 5px;
+     margin-left: -40px;
+ }
+
+
+#rodapé button{
+    color: #000000;
+    background-color: #ff8c00;
+    border: solid 3px 2px 2px 3px rgba(0, 0, 0, 3);
+    border-radius: 30px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 100px;
+    margin-left: 50%;
+    left: 50%;
+}
+
+#dr{
+    font-size: 13px;
+    margin-top: 125px;
+    position: absolute;
+    margin-left: 47%;
+}

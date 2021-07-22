@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calcula consumo</title>
+</head>
+<body>
+    <h3>Alcool ou Gasolina?</h3>
+
+    <script>
+        function mostra(mensagem){
+            document.write(mensagem);
+        }
+        function pulaLinha(){
+            document.write("<br>");
+        }
+        var tanque = 40;
+        var caminho = 480;
+        var consumo = (caminho/tanque);
+        var caminhoAlcool = 300;
+        var consumoAlcool = (caminhoAlcool/tanque);
+        mostra("O consumo total de gasolina foi: " + consumo);
+            pulaLinha();
+        mostra("<br> O consumo total de alcool foi: " + consumoAlcool);
+            pulaLinha();
+
+            
+
+
+
+    </script>
+
+</body>
+</html>

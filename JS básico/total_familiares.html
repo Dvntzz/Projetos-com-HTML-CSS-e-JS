@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade familiares</title>
+</head>
+<body>
+    <script>
+         //mostra mensagem no mundo HTML
+         function mostra(frase){
+            document.write(frase);
+            pulaLinha();
+        }   
+        //pula duas linhas
+        function pulaLinha(){
+            document.write("<br><br>");
+        }
+
+        //variavel que armazena a quantidade de familiares
+        //parseInt tranforma o conteudo que o usuario digita de String para Int
+        var totalFamiliares = parseInt(prompt("Quantidade de familiares?"));
+
+        //contador iniciando em 1 (minimo de familiares)
+        var cont = 1;
+        
+        //variavel que armazena a soma da idade dos familiares
+        var totalIdades = 0;
+
+
+        //laço while que se repete até atingir o numero de familiares em questão
+        while(cont <= totalFamiliares){
+
+            //variavel idade guarda a idade digitada para cara familiar
+            var idade = parseInt(prompt("Informe a idade no familiar: "));
+            totalIdades = totalIdades + idade;
+
+            //contador aumentando de 1 em 1 até chegar ao valor da variavel totalFamiliares
+            cont++;
+        }
+
+        //Calculo da media das idades
+        var mediaDasIdades = totalIdades/totalFamiliares;
+        mostra("A media da soma das idades do familiares é igual a: " + Math.round(mediaDasIdades));
+        mostra("FIM");
+    </script>
+</body>
+</html>

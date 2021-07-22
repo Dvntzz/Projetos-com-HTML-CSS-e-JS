@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+</head>
+<body>
+    <Script>
+        //mostra mensagem no mundo HTML
+         function mostra(frase){
+            document.write(frase);
+            pulaLinha();
+        }   
+        //pula duas linhas
+        function pulaLinha(){
+            document.write("<br><br>");
+        }
+        //cria a tabuada de soma com o numero na variavel "multiplicador"
+        function tabuadaSoma(x){
+            mostra("Tabuada de soma do 0 ao 10 + " + multiplicador);
+            for(var i=0;i<=10;i++){
+            soma=i+x;
+            mostra(x + " + " + i + " = " + soma);
+        }
+        }
+        //cria a tabuada de subtração com numero na variavel "multiplicador"
+        function tabuadaMenos(x){
+            mostra("Tabuada de subtração do 0 ao 10 - " + multiplicador);
+            for(var i=0;i<=10;i++){
+            soma=i-x;
+            mostra(x + " - " + i + " = " + soma);
+        }
+        }
+         //cria a tabuada de multiplicação com numero na variavel "multiplicador"
+        function tabuadaVezes(x){
+            mostra("Tabuada de multiplicação do 0 ao 10 * " + multiplicador);
+            for(var i=0;i<=10;i++){
+            soma=i*x;
+            mostra(x + " * " + i + " = " + soma);
+        }
+        }
+         //cria a tabuada de divisão com numero na variavel "multiplicador"
+        function tabuadaDividir(x){
+            mostra("Tabuada de divisão do 0 ao 10 / " + multiplicador);
+            for(var i=0;i<=10;i++){
+            soma=i/x;
+            mostra(x + " / " + i + " = " + soma);
+        }
+        }
+
+        //recolhe o conteudo das variaveis "multiplicador" e "simbolo" por meio do prompt.
+        //a tag "parseInt" tranforma o conteudo do prompt de String para Int.
+        var multiplicador = parseInt(prompt("Digite o numero que você quer ver na tabuada"));
+        var simbolo = (prompt("Você quer dividir(/), somar(+), subtrair(-) ou multiplicar(*)? use o simbolo respectivo a operação que deseja efetuar."))
+        
+        //se o conteudo da  variavel simbolo for + o pagina entregara a tabuada de somo
+        if(simbolo == "+"){
+        tabuadaSoma(multiplicador);
+        //se o conteudo da  variavel simbolo for - o pagina entregara a tabuada de subtração
+    } else if(simbolo == "-"){
+        tabuadaMenos(multiplicador);
+        //se o conteudo da  variavel simbolo for * o pagina entregara a tabuada de multiplicação
+    } else if(simbolo == "*"){
+        tabuadaVezes(multiplicador);
+        //se o conteudo da  variavel simbolo for / o pagina entregara a tabuada de Divisão
+    } else if(simbolo == "/"){
+        tabuadaDividir(multiplicador);
+        //caso a variavel simbolo não tenha nenhum dos conteudos acima, o resultado será um erro
+    }else{
+        mostra("ERRO. REINICIE A PAGINA E TENTE NOVAMENTE.")
+    }
+    </Script>
+</body>
+</html>
